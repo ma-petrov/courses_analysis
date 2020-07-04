@@ -5,7 +5,7 @@ OPENEDU_URL = "https://openedu.ru/course/"
 
 response = requests.get(OPENEDU_URL)
 
-hrefs = re.findall('href="[A-Za-z0-9:/.]+"', response.text)
+hrefs = re.findall('["\']https[A-Za-z0-9:/.]+["\']', response.text)
 
 with open('hrefs_list.txt', 'w') as f:
     for href in hrefs:
