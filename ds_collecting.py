@@ -1,26 +1,15 @@
+"""
+Version 2.0 (Stepik)
+Site parcing based on Selenium WebDriver
+"""
+
 import requests
 import re
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 
 STEPIK_URL = "https://stepik.org/course/{}/promo"
 
-with open('course_list_html.txt', 'w') as f:
-    for i in range(2000):
-        response = requests.get(STEPIK_URL.format(str(i)))
-        if (response.status_code != 404):
-            f.write(str(i)+'\n')
-        else:
-            print('E: page {} does not exists'.format(STEPIK_URL.format(str(i))))
-
-"""
-hrefs = re.findall('["\']https[A-Za-z0-9:/.]+["\']', response.text)
-
-with open('hrefs_list.txt', 'w') as f:
-    for href in hrefs:
-        f.write(href)
-        f.write('\n')
-
-with open('course_list_html.txt', 'w') as f:
-    f.write(response.text)
-
-requests.models.Response
-"""
+driver = webdriver.Chrome(executable_path='C:/ProgramData/chromedriver_win32/chromedriver.exe')
+driver.get(STEPIK_URL.format('1'))
+driver.close()
