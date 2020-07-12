@@ -1,6 +1,6 @@
 """
-Version 2.0 (Coursera)
-Site parcing based on Selenium WebDriver
+Version 1.0 (Coursera)
+Site parcing by BeautifulSoup
 """
 
 import requests
