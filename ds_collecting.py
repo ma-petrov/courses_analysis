@@ -5,39 +5,72 @@ Site parcing by BeautifulSoup
 
 import requests
 import re
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.ui import WebDriverWait
+from bs4 import BeautifulSoup
 
-COURSERA_URL = 'https://ru.coursera.org/courses'
 
-# function make driver waits 20 seconds and find elemet by class name
-def wait_and_find_by_class(driver, element):
+COURSERA_URL = 'https://ru.coursera.org'
+COURSES = '/courses?page={}&index=prod_all_products_term_optimization'
+
+# is used for testing
+def get_html_and_save_to_file(url):
+    response = requests.get(url)
+    with open('index.html', 'w', encoding='utf-8') as f:
+        f.write(response.text)
+"""
+def main():
+    get_html_and_save_to_file(COURSERA_URL + COURSES)
+"""
+
+
+# This function return list of dictionries, that contains url and mark of course
+# @args: url - url of specialization page
+def parse_specialization_page(url):
     try:
-        return WebDriverWait(driver, 20).until(lambda driver : driver.find_element_by_class_name(element))
-    finally:
-        pass
+        soup = BeautifulSoup(requests.get(COURSERA_URL + url).text, 'lxml')
+    except:
+        print('Error: project page {} not found'.format(url))
+        return None
 
-# 
+    data = []
+    for tag in soup.find_all(class_=re.compile('CourseItem')):
+        link = tag.find('a').get('href')
+        mark = tag.find(class_=re.compile('rating-text')).next_element
+        data.append({'course_link': link, 'course_mark': mark})
+
+    return data
+# end of function parse_specialization_page
+
+
+
+# This function return parameters of course
+# @args: url - url of course page
+def parse_course_page(url):
+    return 'values'
+# end of function parse_course_page
+
+
+
+# main function
 def main():
 
-    course_mark = []
+    # get first page of course catalog
+    """
+    try:
+        soup = BeautifulSoup(requests.get(COURSERA_URL + COURSES).text, 'lxml')
+    except:
+        print('Error: coursera don\'t reply')
+        return
+    """
+    
+    with open('index.html', encoding='utf-8') as f:
+        soup = BeautifulSoup(f.read(), 'lxml')
 
-    driver = webdriver.Chrome(executable_path='C:/ProgramData/chromedriver_win32/chromedriver.exe')
-    driver.get(COURSERA_URL)
-    driver.implicitly_wait(20)
+    for tag in soup.find_all('li', {'class': 'ais-InfiniteHits-item'}):
+        link = tag.find('a').get('href')
+        print(COURSERA_URL + link) # here must be method to parse course page
 
-    # finding element with course mark and adding in to list course_mark
-    element = driver.find_element_by_class_name('ratings-text')
-    course_mark.append(str(element))
-    print(course_mark)
-
-    #element = wait_and_find_by_class(driver, 'ratings-text')
-    #course_mark.append(str(element))
-    #print(course_mark)
-
-    element = driver.find_element_by_class_name('image-wrapper vertical-box')
-    element.click()
+        mark = tag.find('span', {'class': 'ratings-text'})
+        print(mark.next_element)
 
 if __name__ == "__main__":
     main()
