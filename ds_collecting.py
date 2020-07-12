@@ -149,7 +149,7 @@ def main():
                 pass
 
     df = pd.DataFrame(sample)
-
+    df.to_csv('sample.csv')
             
 
 if __name__ == "__main__":
