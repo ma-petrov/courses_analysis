@@ -1,22 +1,22 @@
-,COURSE_NAME,RATING,VAR_1,VAR_2,VAR_3,"начал новую карьеру, пройдя эти курсы",получил значимые преимущества в карьере благодаря этому курсу,стал больше зарабатывать или получил повышение
-0,,4.8,34,34.0,13.0,,,
-1,,4.8,34,34.0,13.0,,,
-2,,4.8,34,34.0,13.0,,,
-3,,4.8,34,34.0,13.0,,,
-4,,4.7,38,33.0,11.0,,,
-5,,4.7,38,33.0,11.0,,,
-6,,4.7,38,33.0,11.0,,,
-7,,4.7,38,33.0,11.0,,,
-8,,4.9,36,37.0,12.0,,,
-9,,4.9,36,37.0,12.0,,,
-10,,4.9,36,37.0,12.0,,,
-11,,4.9,36,37.0,12.0,,,
-12,Machine Learning,,40,38.0,,,,
-13,The Science of Well-Being,,36,34.0,,,,
-14,,4.7,41,40.0,,,,
-15,,4.7,41,40.0,,,,
-16,,4.7,41,40.0,,,,
-17,,4.7,41,40.0,,,,
-18,,4.7,41,40.0,,,,
-19,,4.7,41,40.0,,,,
-20,Indigenous Canada,,19,,,,,
+,COURSE_NAME,RATING,VAR_1,VAR_2,VAR_3
+0,Using Databases with Python,4.8,34.0,34.0,13.0
+1,Using Databases with Python,4.8,34.0,34.0,13.0
+2,Using Databases with Python,4.8,34.0,34.0,13.0
+3,Using Databases with Python,4.8,34.0,34.0,13.0
+4,Databases and SQL for Data Science,4.7,38.0,33.0,
+5,Databases and SQL for Data Science,4.7,38.0,33.0,
+6,Databases and SQL for Data Science,4.7,38.0,33.0,
+7,Databases and SQL for Data Science,4.7,38.0,33.0,
+8,Convolutional Neural Networks,4.9,36.0,37.0,12.0
+9,Convolutional Neural Networks,4.9,36.0,37.0,12.0
+10,Convolutional Neural Networks,4.9,36.0,37.0,12.0
+11,Convolutional Neural Networks,4.9,36.0,37.0,12.0
+12,Машинное обучение,,40.0,38.0,
+13,The Science of Well-Being,4.9,36.0,34.0,
+14,Что такое наука о данных? ,,41.0,40.0,
+15,Что такое наука о данных? ,,41.0,40.0,
+16,Что такое наука о данных? ,,41.0,40.0,
+17,The AI Ladder: A Framework for Deploying AI in your Enterprise,,,,
+18,The AI Ladder: A Framework for Deploying AI in your Enterprise,,,,
+19,The AI Ladder: A Framework for Deploying AI in your Enterprise,,,,
+20,Indigenous Canada,4.8,19.0,,
