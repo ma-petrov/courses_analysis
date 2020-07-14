@@ -1,22 +1,291 @@
-,TITLE,RATING,VAR_1,VAR_2,VAR_3
-0,Using Databases with Python,4.8,34.0,34.0,13.0
-1,Using Databases with Python,4.8,34.0,34.0,13.0
-2,Using Databases with Python,4.8,34.0,34.0,13.0
-3,Using Databases with Python,4.8,34.0,34.0,13.0
-4,Databases and SQL for Data Science,4.7,38.0,33.0,
-5,Databases and SQL for Data Science,4.7,38.0,33.0,
-6,Databases and SQL for Data Science,4.7,38.0,33.0,
-7,Databases and SQL for Data Science,4.7,38.0,33.0,
-8,Convolutional Neural Networks,4.9,36.0,37.0,12.0
-9,Convolutional Neural Networks,4.9,36.0,37.0,12.0
-10,Convolutional Neural Networks,4.9,36.0,37.0,12.0
-11,Convolutional Neural Networks,4.9,36.0,37.0,12.0
-12,Машинное обучение,,40.0,38.0,
-13,The Science of Well-Being,4.9,36.0,34.0,
-14,Что такое наука о данных? ,,41.0,40.0,
-15,Что такое наука о данных? ,,41.0,40.0,
-16,Что такое наука о данных? ,,41.0,40.0,
-17,The AI Ladder: A Framework for Deploying AI in your Enterprise,,,,
-18,The AI Ladder: A Framework for Deploying AI in your Enterprise,,,,
-19,The AI Ladder: A Framework for Deploying AI in your Enterprise,,,,
-20,Indigenous Canada,4.8,19.0,,
+,TITLE,URL,RATING,NEW_CARRIER,TAKE_ADVANTAGES,EARN_MORE,LEVEL,LANGUAGE,EXEC_TIME,CHAPTERS_CNT,COURSE_DUR,CHAP_AVG_DUR
+0,Programming for Everybody (Getting Started with Python),https://ru.coursera.org/learn/python?specialization=python,4.8,39.0,39.0,12.0,,2,,7,1140,162.85714285714286
+1,Структуры данных в Python,https://ru.coursera.org/learn/python-data?specialization=python,4.9,31.0,32.0,12.0,,2,,7,1140,162.85714285714286
+2,Using Python to Access Web Data,https://ru.coursera.org/learn/python-network-data?specialization=python,4.8,34.0,33.0,15.0,,2,,6,1140,190.0
+3,Using Databases with Python,https://ru.coursera.org/learn/python-databases?specialization=python,4.8,34.0,34.0,13.0,,2,,5,900,180.0
+4,Что такое наука о данных? ,https://ru.coursera.org/learn/what-is-datascience,4.7,41.0,40.0,,1.0,2,,3,480,160.0
+5,Tools for Data Science,https://ru.coursera.org/learn/open-source-tools-for-data-science,,46.0,45.0,19.0,1.0,2,,4,960,240.0
+6,Data Science Methodology,https://ru.coursera.org/learn/data-science-methodology,4.6,34.0,37.0,11.0,1.0,2,,3,540,180.0
+7,Databases and SQL for Data Science,https://ru.coursera.org/learn/sql-data-science,,38.0,33.0,,1.0,2,,4,840,210.0
+8,Нейронные сети и глубокое обучение,https://ru.coursera.org/learn/neural-networks-deep-learning?specialization=deep-learning,4.9,39.0,38.0,11.0,2.0,2,,4,1200,300.0
+9,"Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization",https://ru.coursera.org/learn/deep-neural-network?specialization=deep-learning,4.9,41.0,37.0,12.0,1.0,2,,3,1080,360.0
+10,Structuring Machine Learning Projects,https://ru.coursera.org/learn/machine-learning-projects?specialization=deep-learning,4.8,36.0,38.0,14.0,1.0,2,,2,300,150.0
+11,Convolutional Neural Networks,https://ru.coursera.org/learn/convolutional-neural-networks?specialization=deep-learning,4.9,36.0,37.0,12.0,2.0,2,,4,1200,300.0
+12,Машинное обучение,https://ru.coursera.org/learn/machine-learning,4.9,40.0,38.0,,,2,,11,1920,174.54545454545453
+13,Introduction to Cloud Computing,https://ru.coursera.org/learn/introduction-to-cloud,4.8,,,,1.0,2,,5,540,108.0
+14,Introduction to Artificial Intelligence (AI),https://ru.coursera.org/learn/introduction-to-ai,4.7,,,,1.0,2,,4,480,120.0
+15,Что такое наука о данных? ,https://ru.coursera.org/learn/what-is-datascience,4.7,41.0,40.0,,1.0,2,,3,480,160.0
+16,The Science of Well-Being,https://ru.coursera.org/learn/the-science-of-well-being,,36.0,34.0,,,2,,10,1080,108.0
+17,Introduction to Artificial Intelligence (AI),https://ru.coursera.org/learn/introduction-to-ai,,,,,1.0,2,,4,480,120.0
+18,Что такое наука о данных? ,https://ru.coursera.org/learn/what-is-datascience,4.7,41.0,40.0,,1.0,2,,3,480,160.0
+19,The AI Ladder: A Framework for Deploying AI in your Enterprise,https://ru.coursera.org/learn/ibm-ai-ladder-framework,4.7,,,,1.0,2,,1,180,180.0
+20,Indigenous Canada,https://ru.coursera.org/learn/indigenous-canada,4.8,19.0,,,,2,,12,1200,100.0
+21,Python for Data Science and AI,https://ru.coursera.org/learn/python-for-applied-data-science-ai,4.6,41.0,39.0,,1.0,2,,5,1320,264.0
+22,Анализ данных с Python,https://ru.coursera.org/learn/data-analysis-with-python,4.7,42.0,41.0,,1.0,2,,7,842,120.28571428571429
+23,Data Visualization with Python,https://ru.coursera.org/learn/python-for-data-visualization,4.6,27.0,35.0,11.0,2.0,2,,3,960,320.0
+24,Applied Data Science Capstone,https://ru.coursera.org/learn/applied-data-science-capstone,4.7,45.0,41.0,10.0,2.0,2,,5,2760,552.0
+25,Natural Language Processing with Classification and Vector Spaces,https://ru.coursera.org/learn/classification-vector-spaces-in-nlp,4.6,,,,2.0,2,,4,1440,360.0
+26,Natural Language Processing with Probabilistic Models,https://ru.coursera.org/learn/probabilistic-models-in-nlp,4.8,,,,2.0,2,,4,1440,360.0
+27,Natural Language Processing with Sequence Models,https://ru.coursera.org/learn/sequence-models-in-nlp,,,,,2.0,2,,4,1080,270.0
+28,Natural Language Processing with Attention Models,https://ru.coursera.org/learn/attention-models-in-nlp,,,,,2.0,2,,2,240,120.0
+29,Введение в маркетинг,https://ru.coursera.org/learn/wharton-marketing?specialization=wharton-business-foundations,4.8,33.0,36.0,11.0,,2,,5,600,120.0
+30,Введение в финансовый учёт,https://ru.coursera.org/learn/wharton-accounting?specialization=wharton-business-foundations,4.7,41.0,35.0,,,2,,4,720,180.0
+31,Managing Social and Human Capital,https://ru.coursera.org/learn/wharton-social-human-capital?specialization=wharton-business-foundations,,18.0,20.0,11.0,1.0,2,,4,480,120.0
+32,Введение в корпоративные финансы,https://ru.coursera.org/learn/wharton-finance?specialization=wharton-business-foundations,,33.0,32.0,,,2,,4,720,180.0
+33,Набор инструментальных средств для специалистов по обработке данных,https://ru.coursera.org/learn/data-scientists-tools?specialization=jhu-data-science,4.6,39.0,35.0,,,2,,4,780,195.0
+34,Программирование на языке R,https://ru.coursera.org/learn/r-programming?specialization=jhu-data-science,,36.0,35.0,11.0,2.0,2,,4,3480,870.0
+35,Сбор и сортировка данных,https://ru.coursera.org/learn/data-cleaning?specialization=jhu-data-science,,39.0,36.0,,,2,,4,1140,285.0
+36,Разведочный анализ данных,https://ru.coursera.org/learn/exploratory-data-analysis?specialization=jhu-data-science,4.7,38.0,38.0,15.0,,2,,4,3360,840.0
+37,Excel Skills for Business: Essentials,https://ru.coursera.org/learn/excel-essentials,4.9,31.0,31.0,13.0,1.0,2,,6,1260,210.0
+38,Excel Skills for Business: Intermediate I,https://ru.coursera.org/learn/excel-intermediate-1,4.9,36.0,30.0,,2.0,2,,6,960,160.0
+39,Excel Skills for Business: Intermediate II,https://ru.coursera.org/learn/excel-intermediate-2,,19.0,23.0,12.0,2.0,2,,6,1140,190.0
+40,Excel Skills for Business: Advanced,https://ru.coursera.org/learn/excel-advanced,4.7,42.0,38.0,32.0,2.0,2,,6,960,160.0
+41,"Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning",https://ru.coursera.org/learn/introduction-tensorflow,,40.0,43.0,12.0,2.0,2,,4,1800,450.0
+42,Convolutional Neural Networks in TensorFlow,https://ru.coursera.org/learn/convolutional-neural-networks-tensorflow,,,13.0,10.0,2.0,2,,4,1680,420.0
+43,Natural Language Processing in TensorFlow,https://ru.coursera.org/learn/natural-language-processing-tensorflow,4.6,,,,2.0,2,,4,780,195.0
+44,"Sequences, Time Series and Prediction",https://ru.coursera.org/learn/tensorflow-sequences-time-series-and-prediction,4.6,,,,2.0,2,,4,720,180.0
+45,Набор инструментальных средств для специалистов по обработке данных,https://ru.coursera.org/learn/data-scientists-tools?specialization=data-science-foundations-r,4.6,39.0,35.0,,,2,,4,780,195.0
+46,Программирование на языке R,https://ru.coursera.org/learn/r-programming?specialization=data-science-foundations-r,4.5,36.0,35.0,11.0,2.0,2,,4,3480,870.0
+47,Сбор и сортировка данных,https://ru.coursera.org/learn/data-cleaning?specialization=data-science-foundations-r,4.6,39.0,36.0,,,2,,4,1140,285.0
+48,Разведочный анализ данных,https://ru.coursera.org/learn/exploratory-data-analysis?specialization=data-science-foundations-r,4.7,38.0,38.0,15.0,,2,,4,3360,840.0
+49,Introduction to Cybersecurity Tools & Cyber Attacks,https://ru.coursera.org/learn/introduction-cybersecurity-cyber-attacks,4.5,,,,1.0,2,,4,1140,285.0
+50,"Cybersecurity Roles, Processes & Operating System Security",https://ru.coursera.org/learn/cybersecurity-roles-processes-operating-system-security,4.6,,,,1.0,2,,4,420,105.0
+51,Cybersecurity Compliance Framework & System Administration,https://ru.coursera.org/learn/cybersecurity-compliance-framework-system-administration,4.6,,,,1.0,2,,4,840,210.0
+52,Network Security & Database Vulnerabilities ,https://ru.coursera.org/learn/network-security-database-vulnerabilities,4.6,,,,1.0,2,,4,660,165.0
+53,Fundamentals of Quantitative Modeling,https://ru.coursera.org/learn/wharton-quantitative-modeling,4.6,34.0,35.0,10.0,,2,,4,480,120.0
+54,Introduction to Spreadsheets and Models,https://ru.coursera.org/learn/wharton-introduction-spreadsheets-models,4.2,38.0,35.0,12.0,,2,,4,300,75.0
+55,Financial Acumen for Non-Financial Managers,https://ru.coursera.org/learn/finance-healthcare-managers,,,17.0,,1.0,2,,4,540,135.0
+56,Введение в корпоративные финансы,https://ru.coursera.org/learn/wharton-finance,4.6,33.0,32.0,,,2,,4,720,180.0
+57,Финансовые рынки,https://ru.coursera.org/learn/financial-markets-global,4.8,39.0,31.0,12.0,1.0,2,,7,1560,222.85714285714286
+58,Google Cloud Platform Fundamentals: Core Infrastructure,https://ru.coursera.org/learn/gcp-fundamentals?specialization=gcp-architecture,4.7,36.0,37.0,14.0,2.0,2,,1,60,60.0
+59,Essential Google Cloud Infrastructure: Foundation,https://ru.coursera.org/learn/gcp-infrastructure-foundation?specialization=gcp-architecture,4.7,26.0,26.0,,2.0,2,,2,200,100.0
+60,Essential Google Cloud Infrastructure: Core Services,https://ru.coursera.org/learn/gcp-infrastructure-core-services?specialization=gcp-architecture,4.7,29.0,27.0,19.0,2.0,2,,2,80,40.0
+61,Elastic Google Cloud Infrastructure: Scaling and Automation,https://ru.coursera.org/learn/gcp-infrastructure-scaling-automation?specialization=gcp-architecture,4.7,29.0,55.0,50.0,2.0,2,,2,140,70.0
+62,Fundamentals of Graphic Design,https://ru.coursera.org/learn/fundamentals-of-graphic-design?specialization=graphic-design,4.8,50.0,44.0,,1.0,2,,4,840,210.0
+63,Introduction to Typography,https://ru.coursera.org/learn/typography?specialization=graphic-design,4.8,33.0,36.0,,1.0,2,,4,540,135.0
+64,Introduction to Imagemaking,https://ru.coursera.org/learn/image-making?specialization=graphic-design,,67.0,53.0,,1.0,2,,4,840,210.0
+65,Ideas from the History of Graphic Design,https://ru.coursera.org/learn/graphic-design-history?specialization=graphic-design,4.7,48.0,40.0,,1.0,2,,4,480,120.0
+66,Анализ потребительского поведения,https://ru.coursera.org/learn/wharton-customer-analytics?specialization=business-analytics,4.6,33.0,32.0,,,2,,5,424,84.8
+67,Operations Analytics,https://ru.coursera.org/learn/wharton-operations-analytics?specialization=business-analytics,4.7,46.0,51.0,19.0,,2,,4,600,150.0
+68,People Analytics,https://ru.coursera.org/learn/wharton-people-analytics?specialization=business-analytics,,26.0,28.0,14.0,,2,,4,480,120.0
+69,Анализ финансовой отчетности,https://ru.coursera.org/learn/accounting-analytics?specialization=business-analytics,4.5,21.0,25.0,11.0,,2,,4,540,135.0
+70,Fundamentals of Quantitative Modeling,https://ru.coursera.org/learn/wharton-quantitative-modeling?specialization=wharton-business-financial-modeling,4.6,34.0,35.0,10.0,,2,,4,480,120.0
+71,Introduction to Spreadsheets and Models,https://ru.coursera.org/learn/wharton-introduction-spreadsheets-models?specialization=wharton-business-financial-modeling,4.2,38.0,35.0,12.0,,2,,4,300,75.0
+72,Modeling Risk and Realities,https://ru.coursera.org/learn/wharton-risk-models?specialization=wharton-business-financial-modeling,,44.0,32.0,,,2,,4,480,120.0
+73,Decision-Making and Scenarios,https://ru.coursera.org/learn/wharton-decision-making-scenarios?specialization=wharton-business-financial-modeling,4.6,20.0,21.0,,,2,,4,420,105.0
+74,Introduction to Data Science in Python,https://ru.coursera.org/learn/python-data-analysis?specialization=data-science-python,4.5,33.0,35.0,10.0,2.0,2,,4,900,225.0
+75,"Applied Plotting, Charting & Data Representation in Python",https://ru.coursera.org/learn/python-plotting?specialization=data-science-python,4.5,36.0,38.0,14.0,2.0,2,,4,1500,375.0
+76,Applied Machine Learning in Python,https://ru.coursera.org/learn/python-machine-learning?specialization=data-science-python,4.6,34.0,35.0,12.0,2.0,2,,4,2040,510.0
+77,Applied Text Mining in Python,https://ru.coursera.org/learn/python-text-mining?specialization=data-science-python,4.3,32.0,34.0,,2.0,2,,4,1620,405.0
+78,Маркетинг в цифровом мире,https://ru.coursera.org/learn/marketing-digital?specialization=digital-marketing,4.7,48.0,46.0,,1.0,2,,4,1620,405.0
+79,Цифровая аналитика для специалистов по маркетингу: теория маркетингового анализа,https://ru.coursera.org/learn/marketing-analytics?specialization=digital-marketing,4.5,38.0,36.0,12.0,,2,,4,1080,270.0
+80,Цифровая аналитика для специалистов по маркетингу: практика маркетингового анализа,https://ru.coursera.org/learn/digital-analytics?specialization=digital-marketing,4.5,35.0,38.0,14.0,,2,,4,1020,255.0
+81,Digital Media and Marketing Principles,https://ru.coursera.org/learn/marketing-channels?specialization=digital-marketing,4.3,48.0,33.0,,,2,,4,720,180.0
+82,Введение в психологию ,https://ru.coursera.org/learn/introduction-psychology,,,18.0,,1.0,2,,6,720,120.0
+83,Первая психологическая помощь,https://ru.coursera.org/learn/psychological-first-aid,4.8,33.0,26.0,,,2,,5,360,72.0
+84,Positive Psychology: Martin E. P. Seligman’s Visionary Science,https://ru.coursera.org/learn/positive-psychology-visionary-science?specialization=positivepsychology,,62.0,45.0,,1.0,2,,4,1020,255.0
+85,Positive Psychology: Applications and Interventions,https://ru.coursera.org/learn/positive-psychology-applications?specialization=positivepsychology,,80.0,67.0,13.0,1.0,2,,4,960,240.0
+86,"Positive Psychology: Character, Grit and Research Methods",https://ru.coursera.org/learn/positive-psychology-methods?specialization=positivepsychology,4.3,57.0,40.0,,1.0,2,,4,1440,360.0
+87,Positive Psychology: Resilience Skills,https://ru.coursera.org/learn/positive-psychology-resilience?specialization=positivepsychology,4.9,20.0,29.0,,1.0,2,,4,960,240.0
+88,Инициирование и планирование проектов,https://ru.coursera.org/learn/project-planning,4.7,38.0,34.0,11.0,,2,,6,320,53.333333333333336
+89,Планирование бюджета и графика проектов,https://ru.coursera.org/learn/schedule-projects,4.7,32.0,38.0,19.0,,2,,5,320,64.0
+90,Управление рисками проекта и изменениями по проекту,https://ru.coursera.org/learn/project-risk-management,4.7,31.0,34.0,13.0,,2,,5,320,64.0
+91,Project Management Project,https://ru.coursera.org/learn/project-management-capstone,4.8,29.0,33.0,11.0,,2,,4,200,50.0
+92,Инициирование и планирование проектов,https://ru.coursera.org/learn/project-planning?specialization=project-management-success,,38.0,34.0,11.0,,2,,6,320,53.333333333333336
+93,Управление рисками проекта и изменениями по проекту,https://ru.coursera.org/learn/project-risk-management?specialization=project-management-success,,31.0,34.0,13.0,,2,,5,320,64.0
+94,Высокоэффективная деловая письменная речь,https://ru.coursera.org/learn/business-writing?specialization=project-management-success,4.4,22.0,12.0,,,2,,4,300,75.0
+95,Искусство переговоров,https://ru.coursera.org/learn/art-of-negotiation?specialization=project-management-success,4.4,19.0,28.0,16.0,,2,,4,420,105.0
+96,"Programming Foundations with JavaScript, HTML and CSS",https://ru.coursera.org/learn/duke-programming-web?specialization=java-programming,4.6,41.0,41.0,13.0,1.0,2,,4,1463,365.75
+97,Java Programming: Solving Problems with Software,https://ru.coursera.org/learn/java-programming?specialization=java-programming,4.6,50.0,41.0,17.0,1.0,2,,4,502,125.5
+98,"Java Programming: Arrays, Lists, and Structured Data",https://ru.coursera.org/learn/java-programming-arrays-lists-data?specialization=java-programming,4.7,62.0,44.0,,1.0,2,,4,433,108.25
+99,Java Programming: Principles of Software Design,https://ru.coursera.org/learn/java-programming-design-principles?specialization=java-programming,,22.0,29.0,17.0,1.0,2,,4,374,93.5
+100,Google Cloud Platform Fundamentals: Core Infrastructure,https://ru.coursera.org/learn/gcp-fundamentals,4.7,36.0,37.0,14.0,2.0,2,,1,60,60.0
+101,Architecting with Google Kubernetes Engine: Foundations,https://ru.coursera.org/learn/foundations-google-kubernetes-engine-gke,,67.0,80.0,33.0,2.0,2,,1,26,26.0
+102,Architecting with Google Kubernetes Engine: Workloads,https://ru.coursera.org/learn/deploying-workloads-google-kubernetes-engine-gke,4.7,,,,2.0,2,,1,25,25.0
+103,Architecting with Google Kubernetes Engine: Production,https://ru.coursera.org/learn/deploying-secure-kubernetes-containers-in-production,4.7,,50.0,,2.0,2,,1,25,25.0
+104,Python Basics,https://ru.coursera.org/learn/python-basics?specialization=python-3-programming,,44.0,46.0,28.0,1.0,2,,4,2100,525.0
+105,"Python Functions, Files, and Dictionaries",https://ru.coursera.org/learn/python-functions-files-dictionaries?specialization=python-3-programming,4.8,25.0,20.0,,1.0,2,,5,1980,396.0
+106,Data Collection and Processing with Python,https://ru.coursera.org/learn/data-collection-processing-python?specialization=python-3-programming,4.7,,,,2.0,2,,3,960,320.0
+107,Python Classes and Inheritance,https://ru.coursera.org/learn/python-classes-inheritance?specialization=python-3-programming,4.7,50.0,50.0,,2.0,2,,3,1020,340.0
+108,Write Professional Emails in English,https://ru.coursera.org/learn/professional-emails-english,4.7,51.0,45.0,15.0,,2,,5,840,168.0
+109,"Speak English Professionally: In Person, Online & On the Phone",https://ru.coursera.org/learn/speak-english-professionally,4.7,45.0,54.0,37.0,,2,,5,960,192.0
+110,Build Your Professional ePortfolio in English,https://ru.coursera.org/learn/eportfolio-english,4.7,67.0,60.0,,,2,,4,780,195.0
+111,Take Your English Communication Skills to the Next Level,https://ru.coursera.org/learn/english-communication-capstone,,67.0,67.0,,,2,,4,780,195.0
+112,Business Metrics for Data-Driven Companies,https://ru.coursera.org/learn/analytics-business-metrics?specialization=excel-mysql,4.6,29.0,29.0,13.0,,2,,4,388,97.0
+113,Mastering Data Analysis in Excel,https://ru.coursera.org/learn/analytics-excel?specialization=excel-mysql,4.2,23.0,21.0,,,2,,6,1140,190.0
+114,Data Visualization and Communication with Tableau,https://ru.coursera.org/learn/analytics-tableau?specialization=excel-mysql,4.7,36.0,31.0,,,2,,5,1440,288.0
+115,Managing Big Data with MySQL,https://ru.coursera.org/learn/analytics-mysql?specialization=excel-mysql,4.7,42.0,42.0,24.0,,2,,5,2160,432.0
+116,Google Cloud Platform Fundamentals: Core Infrastructure,https://ru.coursera.org/learn/gcp-fundamentals,,36.0,37.0,14.0,2.0,2,,1,60,60.0
+117,Getting Started With Application Development,https://ru.coursera.org/learn/getting-started-app-development,4.5,50.0,56.0,12.0,2.0,2,,1,28,28.0
+118,Securing and Integrating Components of your Application,https://ru.coursera.org/learn/securing-integrating-components-app,4.6,,33.0,,2.0,2,,1,240,240.0
+119,"App Deployment, Debugging, and Performance",https://ru.coursera.org/learn/app-deployment-debugging-performance,4.6,40.0,25.0,17.0,2.0,2,,1,300,300.0
+120,Google Cloud Platform Fundamentals: Core Infrastructure,https://ru.coursera.org/learn/gcp-fundamentals,,36.0,37.0,14.0,2.0,2,,1,60,60.0
+121,Managing Security in Google Cloud Platform,https://ru.coursera.org/learn/managing-security-in-google-cloud-platform,4.7,,,,2.0,2,,4,380,95.0
+122,Security Best Practices in Google Cloud,https://ru.coursera.org/learn/security-best-practices-in-google-cloud,4.7,,,,2.0,2,,5,560,112.0
+123,Mitigating Security Vulnerabilities on Google Cloud Platform,https://ru.coursera.org/learn/mitigating-security-vulnerabilites-gcp,,33.0,67.0,33.0,2.0,2,,3,320,106.66666666666667
+124,Google Cloud Platform Fundamentals: Core Infrastructure,https://ru.coursera.org/learn/gcp-fundamentals,,36.0,37.0,14.0,2.0,2,,1,60,60.0
+125,Networking in Google Cloud: Defining and Implementing Networks,https://ru.coursera.org/learn/networking-gcp-defining-implementing-networks,4.8,67.0,67.0,20.0,2.0,2,,2,80,40.0
+126,Networking in Google Cloud: Hybrid Connectivity and Network Management,https://ru.coursera.org/learn/networking-gcp-hybrid-connectivity-network-management,,23.0,31.0,20.0,2.0,2,,2,260,130.0
+127,Digital Product Management: Modern Fundamentals,https://ru.coursera.org/learn/uva-darden-digital-product-management?specialization=uva-darden-digital-product-management,,34.0,34.0,,1.0,2,,4,660,165.0
+128,Agile Meets Design Thinking,https://ru.coursera.org/learn/uva-darden-getting-started-agile?specialization=uva-darden-digital-product-management,4.7,35.0,31.0,,1.0,2,,4,600,150.0
+129,Hypothesis-Driven Development,https://ru.coursera.org/learn/uva-darden-agile-testing?specialization=uva-darden-digital-product-management,,67.0,40.0,,,2,,4,600,150.0
+130,Agile Analytics,https://ru.coursera.org/learn/uva-darden-agile-analytics?specialization=uva-darden-digital-product-management,4.7,,,,1.0,2,,4,840,210.0
+131,Programming for Everybody (Getting Started with Python),https://ru.coursera.org/learn/python,4.8,39.0,39.0,12.0,,2,,7,1140,162.85714285714286
+132,Visual Elements of User Interface Design,https://ru.coursera.org/learn/visual-elements-user-interface-design,4.7,32.0,34.0,18.0,1.0,2,,4,870,217.5
+133,UX Design Fundamentals,https://ru.coursera.org/learn/ux-design-fundamentals,,,,,1.0,2,,4,679,169.75
+134,Web Design: Strategy and Information Architecture,https://ru.coursera.org/learn/web-design-strategy,4.8,,,,2.0,2,,4,682,170.5
+135,Web Design: Wireframes to Prototypes,https://ru.coursera.org/learn/web-design-wireframes-prototypes,4.9,25.0,25.0,,2.0,2,,4,2001,500.25
+136,Mathematics for Machine Learning: Linear Algebra,https://ru.coursera.org/learn/linear-algebra-machine-learning,4.7,35.0,34.0,,1.0,2,,5,1080,216.0
+137,Mathematics for Machine Learning: Multivariate Calculus,https://ru.coursera.org/learn/multivariate-calculus-machine-learning,4.7,35.0,26.0,,1.0,2,,6,1020,170.0
+138,Mathematics for Machine Learning: PCA,https://ru.coursera.org/learn/pca-machine-learning,,50.0,48.0,,2.0,2,,4,1080,270.0
+139,Google Cloud Platform Big Data and Machine Learning Fundamentals,https://ru.coursera.org/learn/gcp-big-data-ml-fundamentals?specialization=gcp-data-machine-learning,,45.0,43.0,,2.0,2,,2,300,150.0
+140, Modernizing Data Lakes and Data Warehouses with GCP,https://ru.coursera.org/learn/data-lakes-data-warehouses-gcp?specialization=gcp-data-machine-learning,,,,,2.0,2,,2,247,123.5
+141,Building Batch Data Pipelines on GCP,https://ru.coursera.org/learn/batch-data-pipelines-gcp?specialization=gcp-data-machine-learning,,,,,2.0,2,,2,186,93.0
+142,Building Resilient Streaming Analytics Systems on GCP,https://ru.coursera.org/learn/streaming-analytics-systems-gcp?specialization=gcp-data-machine-learning,,,,,2.0,2,,2,246,123.0
+143,Introduction to HTML5,https://ru.coursera.org/learn/html?specialization=web-design,4.7,46.0,45.0,13.0,,2,,3,720,240.0
+144,Introduction to CSS3,https://ru.coursera.org/learn/introcss?specialization=web-design,4.8,50.0,44.0,15.0,,2,,4,840,210.0
+145,Interactivity with JavaScript,https://ru.coursera.org/learn/javascript?specialization=web-design,,41.0,31.0,11.0,,2,,4,660,165.0
+146,Advanced Styling with Responsive Design,https://ru.coursera.org/learn/responsivedesign?specialization=web-design,,49.0,46.0,10.0,,2,,4,780,195.0
+147,Entrepreneurship 1: Developing the Opportunity,https://ru.coursera.org/learn/wharton-entrepreneurship-opportunity?specialization=wharton-entrepreneurship,4.8,67.0,62.0,,,2,,4,381,95.25
+148,Entrepreneurship 2: Launching your Start-Up,https://ru.coursera.org/learn/wharton-launching-startup?specialization=wharton-entrepreneurship,4.8,83.0,74.0,17.0,,2,,4,420,105.0
+149,Entrepreneurship 3: Growth Strategies,https://ru.coursera.org/learn/growth-strategy?specialization=wharton-entrepreneurship,4.8,67.0,59.0,33.0,1.0,2,,4,480,120.0
+150,Entrepreneurship 4: Financing and Profitability,https://ru.coursera.org/learn/wharton-entrepreneurship-financing-profitabilty?specialization=wharton-entrepreneurship,,71.0,76.0,25.0,,2,,4,360,90.0
+151,Technical Support Fundamentals,https://ru.coursera.org/learn/technical-support-fundamentals,4.8,,,,1.0,2,,6,1440,240.0
+152,Data-driven Decision Making,https://ru.coursera.org/learn/decision-making?specialization=pwc-analytics,,36.0,30.0,,1.0,2,,4,480,120.0
+153,Problem Solving with Excel ,https://ru.coursera.org/learn/excel-analysis?specialization=pwc-analytics,4.7,32.0,29.0,12.0,1.0,2,,4,960,240.0
+154,Data Visualization with Advanced Excel,https://ru.coursera.org/learn/advanced-excel?specialization=pwc-analytics,,21.0,25.0,17.0,1.0,2,,4,900,225.0
+155,Effective Business Presentations with Powerpoint,https://ru.coursera.org/learn/powerpoint-presentations?specialization=pwc-analytics,4.6,60.0,43.0,,1.0,2,,4,660,165.0
+156,Teach English Now! Foundational Principles,https://ru.coursera.org/learn/english-principles,4.9,49.0,50.0,25.0,,2,,6,1200,200.0
+157,Teach English Now! Theories of Second Language Acquisition,https://ru.coursera.org/learn/language-theories,4.9,45.0,40.0,11.0,,2,,6,960,160.0
+158,Teach English Now! Lesson Design and Assessment,https://ru.coursera.org/learn/lesson-design,,48.0,47.0,28.0,,2,,6,1380,230.0
+159,Teach English Now! Capstone Project 1,https://ru.coursera.org/learn/teaching-english-capstone,,53.0,52.0,33.0,,2,,6,3120,520.0
+160,Искусственный интеллект для каждого,https://ru.coursera.org/learn/ai-for-everyone,4.8,44.0,38.0,12.0,1.0,2,,4,360,90.0
+161,Успешное ведение переговоров: необходимые стратегии и навыки,https://ru.coursera.org/learn/negotiation-skills,,28.0,26.0,15.0,,2,,7,1020,145.71428571428572
+162,Design Thinking for Innovation,https://ru.coursera.org/learn/uva-darden-design-thinking-innovation,,25.0,26.0,,1.0,2,,5,420,84.0
+163,Introduction to Search Engine Optimization,https://ru.coursera.org/learn/search-engine-optimization?specialization=seo,,54.0,50.0,21.0,,2,,4,1200,300.0
+164,Search Engine Optimization Fundamentals,https://ru.coursera.org/learn/seo-fundamentals?specialization=seo,,75.0,58.0,,,2,,4,1740,435.0
+165,Optimizing a Website for Search,https://ru.coursera.org/learn/optimizing-web-search?specialization=seo,4.7,47.0,50.0,11.0,2.0,2,,4,1440,360.0
+166,Advanced Content and Social Tactics to Optimize SEO,https://ru.coursera.org/learn/seo-tactics?specialization=seo,4.5,50.0,45.0,20.0,2.0,2,,4,960,240.0
+167,Управление проектами: основы успеха,https://ru.coursera.org/learn/project-management-basics?specialization=career-success,4.6,38.0,31.0,11.0,,2,,4,480,120.0
+168,"Как работать умнее, а не тяжелее: Планирование рабочего времени для повышения личной и профессиональной производительности",https://ru.coursera.org/learn/work-smarter-not-harder?specialization=career-success,4.4,37.0,31.0,15.0,,2,,4,240,60.0
+169,"Финансы для тех, кто не является специалистом в области финансов",https://ru.coursera.org/learn/finance-for-non-finance-managers?specialization=career-success,4.5,29.0,23.0,10.0,,2,,4,420,105.0
+170,Общение на рабочем месте 21 века,https://ru.coursera.org/learn/communication-in-the-workplace?specialization=career-success,4.3,29.0,20.0,,,2,,4,300,75.0
+171,AWS Fundamentals: Going Cloud-Native,https://ru.coursera.org/learn/aws-fundamentals-going-cloud-native,4.7,38.0,31.0,11.0,1.0,2,,5,480,96.0
+172,AWS Fundamentals: Addressing Security Risk,https://ru.coursera.org/learn/aws-fundamentals-addressing-security-risk,4.4,,,,1.0,2,,4,240,60.0
+173,AWS Fundamentals: Migrating to the Cloud,https://ru.coursera.org/learn/aws-fundamentals-cloud-migration,4.5,,,,2.0,2,,4,480,120.0
+174,AWS Fundamentals: Building Serverless Applications,https://ru.coursera.org/learn/aws-fundamentals-building-serverless-applications,4.7,67.0,75.0,33.0,1.0,2,,4,660,165.0
+175,Supply Chain Logistics,https://ru.coursera.org/learn/supply-chain-logistics?specialization=supply-chain-management,4.7,39.0,36.0,,1.0,2,,4,624,156.0
+176,Supply Chain Operations,https://ru.coursera.org/learn/operations?specialization=supply-chain-management,4.7,50.0,52.0,18.0,1.0,2,,4,660,165.0
+177,Планирование цепочки поставок,https://ru.coursera.org/learn/planning?specialization=supply-chain-management,4.7,46.0,38.0,12.0,1.0,2,,4,780,195.0
+178,Цепочки снабжения,https://ru.coursera.org/learn/sourcing?specialization=supply-chain-management,4.7,33.0,33.0,,1.0,2,,4,840,210.0
+179,Fundamentals of Reinforcement Learning,https://ru.coursera.org/learn/fundamentals-of-reinforcement-learning,4.8,,,,2.0,2,,4,660,165.0
+180,Sample-based Learning Methods,https://ru.coursera.org/learn/sample-based-learning-methods,,,,,2.0,2,,5,1740,348.0
+181,Prediction and Control with Function Approximation,https://ru.coursera.org/learn/prediction-control-function-approximation,4.8,,,,2.0,2,,4,1380,345.0
+182,A Complete Reinforcement Learning System (Capstone),https://ru.coursera.org/learn/complete-reinforcement-learning-system,,,,,2.0,2,,6,1320,220.0
+183,Нейронные сети и глубокое обучение,https://ru.coursera.org/learn/neural-networks-deep-learning,,39.0,38.0,11.0,2.0,2,,4,1200,300.0
+184,"Divide and Conquer, Sorting and Searching, and Randomized Algorithms",https://ru.coursera.org/learn/algorithms-divide-conquer,4.8,36.0,37.0,26.0,2.0,2,,4,780,195.0
+185,"Graph Search, Shortest Paths, and Data Structures",https://ru.coursera.org/learn/algorithms-graphs-data-structures,4.8,41.0,48.0,,2.0,2,,4,780,195.0
+186,"Greedy Algorithms, Minimum Spanning Trees, and Dynamic Programming",https://ru.coursera.org/learn/algorithms-greedy,4.8,38.0,45.0,14.0,2.0,2,,4,780,195.0
+187,"Shortest Paths Revisited, NP-Complete Problems and What To Do About Them",https://ru.coursera.org/learn/algorithms-npcomplete,4.8,62.0,50.0,12.0,2.0,2,,4,660,165.0
+188,Fundamentals of Visualization with Tableau,https://ru.coursera.org/learn/data-visualization-tableau?specialization=data-visualization,4.5,42.0,35.0,12.0,1.0,2,,4,660,165.0
+189,Essential Design Principles for Tableau,https://ru.coursera.org/learn/dataviz-design?specialization=data-visualization,,31.0,31.0,,1.0,2,,4,780,195.0
+190,Visual Analytics with Tableau,https://ru.coursera.org/learn/dataviz-visual-analytics?specialization=data-visualization,,37.0,38.0,12.0,1.0,2,,4,780,195.0
+191,Creating Dashboards and Storytelling with Tableau,https://ru.coursera.org/learn/dataviz-dashboards?specialization=data-visualization,,33.0,32.0,,1.0,2,,4,1140,285.0
+192,Писательское мастерство в научной сфере ,https://ru.coursera.org/learn/sciwrite,4.9,25.0,19.0,,1.0,2,,8,1740,217.5
+193,Introduction to Artificial Intelligence (AI),https://ru.coursera.org/learn/introduction-to-ai,4.7,,,,1.0,2,,4,480,120.0
+194,Getting Started with AI using IBM Watson,https://ru.coursera.org/learn/ai-with-ibm-watson,4.5,,,,1.0,2,,4,600,150.0
+195,Building AI Powered Chatbots Without Programming,https://ru.coursera.org/learn/building-ai-powered-chatbots,4.8,25.0,50.0,14.0,1.0,2,,4,420,105.0
+196,Preparing to Manage Human Resources,https://ru.coursera.org/learn/managing-human-resources?specialization=human-resource-management,,51.0,49.0,16.0,,2,,4,780,195.0
+197,"Recruiting, Hiring, and Onboarding Employees",https://ru.coursera.org/learn/recruiting-hiring-onboarding-employees?specialization=human-resource-management,,41.0,32.0,,,2,,4,960,240.0
+198,Managing Employee Performance,https://ru.coursera.org/learn/employee-performance?specialization=human-resource-management,4.7,46.0,39.0,10.0,,2,,4,660,165.0
+199,Managing Employee Compensation,https://ru.coursera.org/learn/compensation-management?specialization=human-resource-management,,36.0,28.0,,,2,,4,660,165.0
+200,Grammar and Punctuation,https://ru.coursera.org/learn/grammar-punctuation?specialization=academic-english,4.7,39.0,34.0,13.0,,2,,4,1140,285.0
+201,Getting Started with Essay Writing,https://ru.coursera.org/learn/getting-started-with-essay-writing?specialization=academic-english,,41.0,34.0,,,2,,5,1500,300.0
+202,Advanced Writing,https://ru.coursera.org/learn/advanced-writing?specialization=academic-english,4.7,38.0,23.0,12.0,,2,,5,1620,324.0
+203,Introduction to Research for Essay Writing,https://ru.coursera.org/learn/introduction-to-research-for-essay-writing?specialization=academic-english,4.7,50.0,38.0,,,2,,4,861,215.25
+204,SQL for Data Science,https://ru.coursera.org/learn/sql-for-data-science,4.6,39.0,34.0,10.0,1.0,2,,4,840,210.0
+205,"Data Wrangling, Analysis and AB Testing with SQL",https://ru.coursera.org/learn/data-wrangling-analysis-abtesting,,,,,2.0,2,,4,900,225.0
+206,Distributed Computing with Spark SQL,https://ru.coursera.org/learn/spark-sql,4.4,,,,2.0,2,,4,780,195.0
+207,SQL for Data Science Capstone Project,https://ru.coursera.org/learn/sql-data-science-capstone,,,,,2.0,2,,4,2100,525.0
+208,Construction Project Management,https://ru.coursera.org/learn/construction-project-management,4.8,28.0,29.0,17.0,1.0,2,,5,568,113.6
+209,Construction Scheduling,https://ru.coursera.org/learn/construction-scheduling,4.8,33.0,36.0,12.0,1.0,2,,5,370,74.0
+210,Construction Cost Estimating and Cost Control,https://ru.coursera.org/learn/construction-cost-estimating,,31.0,27.0,,1.0,2,,5,316,63.2
+211,Construction Finance,https://ru.coursera.org/learn/construction-finance,,44.0,36.0,,1.0,2,,5,666,133.2
+212,Introduction to Software Product Management,https://ru.coursera.org/learn/introduction-to-software-product-management?specialization=product-management,4.6,33.0,34.0,13.0,,2,,2,240,120.0
+213,Software Processes and Agile Practices,https://ru.coursera.org/learn/software-processes-and-agile-practices?specialization=product-management,4.7,31.0,35.0,15.0,,2,,4,420,105.0
+214,Client Needs and Software Requirements ,https://ru.coursera.org/learn/client-needs-and-software-requirements?specialization=product-management,4.8,38.0,43.0,14.0,,2,,4,780,195.0
+215,Agile Planning for Software Products,https://ru.coursera.org/learn/agile-planning-for-software-products?specialization=product-management,,60.0,40.0,18.0,,2,,4,900,225.0
+216,Creative Writing: The Craft of Plot,https://ru.coursera.org/learn/craft-of-plot?specialization=creative-writing,,55.0,48.0,15.0,,2,,4,600,150.0
+217,Creative Writing: The Craft of Character,https://ru.coursera.org/learn/craft-of-character?specialization=creative-writing,4.5,47.0,50.0,,,2,,4,600,150.0
+218,Creative Writing: The Craft of Setting and Description,https://ru.coursera.org/learn/craft-of-setting-and-description?specialization=creative-writing,4.7,29.0,36.0,,,2,,4,720,180.0
+219,Creative Writing: The Craft of Style,https://ru.coursera.org/learn/craft-of-style?specialization=creative-writing,,35.0,35.0,12.0,,2,,4,720,180.0
+220,What is Social?,https://ru.coursera.org/learn/what-is-social?specialization=social-media-marketing,4.6,50.0,47.0,16.0,,2,,4,420,105.0
+221,The Importance of Listening,https://ru.coursera.org/learn/importance-of-listening?specialization=social-media-marketing,,41.0,41.0,11.0,,2,,4,480,120.0
+222,Engagement & Nurture Marketing Strategies,https://ru.coursera.org/learn/nurture-market-strategies?specialization=social-media-marketing,4.8,27.0,35.0,,,2,,4,540,135.0
+223,"Content, Advertising & Social IMC",https://ru.coursera.org/learn/social-imc?specialization=social-media-marketing,4.7,44.0,44.0,,,2,,4,540,135.0
+224,Java Programming: Solving Problems with Software,https://ru.coursera.org/learn/java-programming,4.6,50.0,41.0,17.0,1.0,2,,4,502,125.5
+225,"Java Programming: Arrays, Lists, and Structured Data",https://ru.coursera.org/learn/java-programming-arrays-lists-data,,62.0,44.0,,1.0,2,,4,433,108.25
+226,Object Oriented Programming in Java,https://ru.coursera.org/learn/object-oriented-java,,38.0,38.0,20.0,2.0,2,,6,2280,380.0
+227,Data Structures and Performance,https://ru.coursera.org/learn/data-structures-optimizing-performance,4.8,41.0,38.0,18.0,2.0,2,,6,2340,390.0
+228,Digital Transformation,https://ru.coursera.org/learn/bcg-uva-darden-digital-transformation,4.8,34.0,27.0,,1.0,2,,4,600,150.0
+229,Introduction to Probability and Data with R,https://ru.coursera.org/learn/probability-intro?specialization=statistics,4.7,33.0,30.0,11.0,1.0,2,,5,492,98.4
+230,Статистика вывода,https://ru.coursera.org/learn/inferential-statistics-intro?specialization=statistics,4.8,33.0,22.0,,1.0,2,,5,680,136.0
+231,Linear Regression and Modeling ,https://ru.coursera.org/learn/linear-regression-model?specialization=statistics,4.7,33.0,45.0,12.0,1.0,2,,4,442,110.5
+232,Байесовская статистика,https://ru.coursera.org/learn/bayesian?specialization=statistics,3.9,22.0,17.0,,2.0,2,,5,1500,300.0
+233,Natural Language Processing with Classification and Vector Spaces,https://ru.coursera.org/learn/classification-vector-spaces-in-nlp,4.6,,,,2.0,2,,4,1440,360.0
+234,Quantitative Methods,https://ru.coursera.org/learn/quantitative-methods?specialization=social-science,4.7,15.0,21.0,14.0,,2,,8,2040,255.0
+235,Количественные методы исследований,https://ru.coursera.org/learn/qualitative-methods?specialization=social-science,4.5,14.0,,,2.0,2,,8,1810,226.25
+236,Basic Statistics,https://ru.coursera.org/learn/basic-statistics?specialization=social-science,,41.0,30.0,,1.0,2,,8,1260,157.5
+237,Статистика вывода,https://ru.coursera.org/learn/inferential-statistics?specialization=social-science,,62.0,44.0,,,2,,7,1140,162.85714285714286
+238,Agile Meets Design Thinking,https://ru.coursera.org/learn/uva-darden-getting-started-agile,4.7,35.0,31.0,,1.0,2,,4,600,150.0
+239,Hypothesis-Driven Development,https://ru.coursera.org/learn/uva-darden-agile-testing,4.6,67.0,40.0,,,2,,4,600,150.0
+240,Agile Analytics,https://ru.coursera.org/learn/uva-darden-agile-analytics,,,,,1.0,2,,4,840,210.0
+241,Managing an Agile Team,https://ru.coursera.org/learn/uva-darden-agile-team-management,4.7,50.0,38.0,11.0,,2,,4,660,165.0
+242,Fundamentals of GIS,https://ru.coursera.org/learn/gis?specialization=gis,4.8,25.0,29.0,10.0,1.0,2,,4,1860,465.0
+243,Форматы данных ГИС. Оформление и качество,https://ru.coursera.org/learn/gis-data?specialization=gis,4.9,21.0,35.0,25.0,2.0,2,,4,1620,405.0
+244,Geospatial and Environmental Analysis,https://ru.coursera.org/learn/spatial-analysis?specialization=gis,4.8,53.0,43.0,,2.0,2,,4,720,180.0
+245,"Imagery, Automation, and Applications",https://ru.coursera.org/learn/gis-applications?specialization=gis,4.9,43.0,38.0,15.0,,2,,4,1680,420.0
+246,Financial Acumen for Non-Financial Managers,https://ru.coursera.org/learn/finance-healthcare-managers,4.5,,17.0,,1.0,2,,4,540,135.0
+247,The Economics of Health Care Delivery,https://ru.coursera.org/learn/health-economics-us-healthcare-systems,4.8,33.0,20.0,,,2,,4,240,60.0
+248,Management Fundamentals,https://ru.coursera.org/learn/management-fundamentals-healthcare-administrators,4.7,,,,1.0,2,,4,360,90.0
+249,Health Care Innovation,https://ru.coursera.org/learn/wo-pmo-healthcareinnovation,,,25.0,25.0,,2,,4,360,90.0
+250,Algorithmic Toolbox,https://ru.coursera.org/learn/algorithmic-toolbox?specialization=data-structures-algorithms,4.6,35.0,36.0,15.0,2.0,2,,6,2220,370.0
+251,структуры данных,https://ru.coursera.org/learn/data-structures?specialization=data-structures-algorithms,,37.0,39.0,12.0,2.0,2,,6,1500,250.0
+252,Algorithms on Graphs,https://ru.coursera.org/learn/algorithms-on-graphs?specialization=data-structures-algorithms,4.7,30.0,24.0,15.0,2.0,2,,6,3300,550.0
+253,Строковые алгоритмы,https://ru.coursera.org/learn/algorithms-on-strings?specialization=data-structures-algorithms,,36.0,29.0,,2.0,2,,4,960,240.0
+254,"FinTech: Foundations, Payments, and Regulations",https://ru.coursera.org/learn/wharton-fintech-overview-payments-regulations,,,,,1.0,2,,4,240,60.0
+255,Cryptocurrency and Blockchain: An Introduction to Digital Currencies,https://ru.coursera.org/learn/wharton-cryptocurrency-blockchain-introduction-digital-currency,,,,,,2,,4,300,75.0
+256,"Lending, Crowdfunding, and Modern Investing",https://ru.coursera.org/learn/wharton-crowdfunding-marketplace-lending-modern-investing,4.7,,,,1.0,2,,4,300,75.0
+257,"Application of AI, InsurTech, and Real Estate Technology",https://ru.coursera.org/learn/wharton-ai-application-insurtech-real-estate-technology,4.6,,,,,2,,4,240,60.0
+258,Stanford Introduction to Food and Health,https://ru.coursera.org/learn/food-and-health,4.7,39.0,34.0,12.0,1.0,2,,5,346,69.2
+259,Front-End Web UI Frameworks and Tools: Bootstrap 4,https://ru.coursera.org/learn/bootstrap-4,4.8,37.0,34.0,,2.0,2,,4,2280,570.0
+260,Front-End Web Development with React,https://ru.coursera.org/learn/front-end-react,4.7,41.0,45.0,31.0,2.0,2,,4,2640,660.0
+261,Multiplatform Mobile App Development with React Native,https://ru.coursera.org/learn/react-native,,25.0,50.0,50.0,2.0,2,,4,2580,645.0
+262,"Server-side Development with NodeJS, Express and MongoDB",https://ru.coursera.org/learn/server-side-nodejs,,36.0,50.0,30.0,2.0,2,,4,3240,810.0
+263,"Brand Management: Aligning Business, Brand and Behaviour",https://ru.coursera.org/learn/brand,4.9,45.0,46.0,24.0,1.0,2,,5,1260,252.0
+264,Financial Accounting Fundamentals,https://ru.coursera.org/learn/uva-darden-financial-accounting,4.8,67.0,57.0,25.0,1.0,2,,5,840,168.0
+265,Inspiring and Motivating Individuals,https://ru.coursera.org/learn/motivate-people-teams?specialization=leading-teams,,31.0,29.0,24.0,,2,,4,720,180.0
+266,Managing Talent,https://ru.coursera.org/learn/managing-talent?specialization=leading-teams,4.5,67.0,35.0,12.0,,2,,4,720,180.0
+267,Influencing People,https://ru.coursera.org/learn/influencing-people?specialization=leading-teams,,,14.0,12.0,,2,,4,600,150.0
+268,Leading Teams,https://ru.coursera.org/learn/leading-teams?specialization=leading-teams,,27.0,24.0,17.0,,2,,4,600,150.0
+269,Что такое наука о данных? ,https://ru.coursera.org/learn/what-is-datascience,,41.0,40.0,,1.0,2,,3,480,160.0
+270,Introduction to Negotiation: A Strategic Playbook for Becoming a Principled and Persuasive Negotiator,https://ru.coursera.org/learn/negotiation,4.9,18.0,26.0,17.0,,2,,9,1860,206.66666666666666
+271,AI for Medical Diagnosis,https://ru.coursera.org/learn/ai-for-medical-diagnosis,,,,,2.0,2,,3,1200,400.0
+272,AI for Medical Prognosis ,https://ru.coursera.org/learn/ai-for-medical-prognosis,4.7,,,,2.0,2,,4,1800,450.0
+273,AI For Medical Treatment,https://ru.coursera.org/learn/ai-for-medical-treatment,,,,,2.0,2,,3,1320,440.0
+274,Essential Epidemiologic Tools for Public Health Practice,https://ru.coursera.org/learn/epidemiology-tools?specialization=professional-epidemiology,4.7,,,,1.0,2,,4,240,60.0
+275,Data and Health Indicators in Public Health Practice,https://ru.coursera.org/learn/data-public-health?specialization=professional-epidemiology,4.7,38.0,43.0,21.0,1.0,2,,4,360,90.0
+276,Surveillance Systems: The Building Blocks,https://ru.coursera.org/learn/epidemiology-surveillance-systems?specialization=professional-epidemiology,,,,,1.0,2,,4,420,105.0
+277,"Surveillance Systems: Analysis, Dissemination, and Special Systems",https://ru.coursera.org/learn/epidemiology-surveillance-systems-analysis?specialization=professional-epidemiology,,,,,1.0,2,,4,360,90.0
+278,What is Compliance?,https://ru.coursera.org/learn/what-is-compliance,4.8,,33.0,,,2,,4,600,150.0
+279,Effective Compliance Programs,https://ru.coursera.org/learn/effective-compliance-programs,4.9,,33.0,,,2,,4,720,180.0
+280,Privacy Law and Data Protection,https://ru.coursera.org/learn/privacy-law-data-protection,,,,,,2,,4,660,165.0
+281,What is Corruption: Anti-Corruption and Compliance,https://ru.coursera.org/learn/what-is-corruption-anti-corruption-compliance,,,,,,2,,4,660,165.0
+282,Introduction to Data Analysis Using Excel,https://ru.coursera.org/learn/excel-data-analysis?specialization=business-statistics-analysis,4.7,48.0,41.0,10.0,,2,,4,1140,285.0
+283,"Basic Data Descriptors, Statistical Distributions, and Application to Business Decisions",https://ru.coursera.org/learn/descriptive-statistics-statistical-distributions-business-application?specialization=business-statistics-analysis,,12.0,14.0,,,2,,4,1260,315.0
+284,Business Applications of Hypothesis Testing and Confidence Interval Estimation ,https://ru.coursera.org/learn/hypothesis-testing-confidence-intervals?specialization=business-statistics-analysis,4.8,67.0,75.0,,,2,,4,960,240.0
+285,Linear Regression for Business Statistics,https://ru.coursera.org/learn/linear-regression-business-statistics?specialization=business-statistics-analysis,,40.0,27.0,11.0,,2,,4,1080,270.0
+286,Understanding Financial Markets,https://ru.coursera.org/learn/understanding-financial-markets?specialization=investment-management,4.7,32.0,34.0,13.0,1.0,2,,4,660,165.0
+287,Meeting Investors' Goals,https://ru.coursera.org/learn/meeting-investors-goals?specialization=investment-management,4.8,14.0,21.0,,,2,,4,480,120.0
+288,Portfolio and Risk Management,https://ru.coursera.org/learn/portfolio-risk-management?specialization=investment-management,4.7,38.0,37.0,,,2,,4,420,105.0
+289,Securing Investment Returns in the Long Run,https://ru.coursera.org/learn/investment-returns-long-run?specialization=investment-management,,47.0,42.0,14.0,,2,,4,480,120.0
