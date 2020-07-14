@@ -1,22 +1,22 @@
-,TITLE,RATING,VAR_1,VAR_2,VAR_3
-0,Using Databases with Python,4.8,34.0,34.0,13.0
-1,Using Databases with Python,4.8,34.0,34.0,13.0
-2,Using Databases with Python,4.8,34.0,34.0,13.0
-3,Using Databases with Python,4.8,34.0,34.0,13.0
-4,Databases and SQL for Data Science,4.7,38.0,33.0,
-5,Databases and SQL for Data Science,4.7,38.0,33.0,
-6,Databases and SQL for Data Science,4.7,38.0,33.0,
-7,Databases and SQL for Data Science,4.7,38.0,33.0,
-8,Convolutional Neural Networks,4.9,36.0,37.0,12.0
-9,Convolutional Neural Networks,4.9,36.0,37.0,12.0
-10,Convolutional Neural Networks,4.9,36.0,37.0,12.0
-11,Convolutional Neural Networks,4.9,36.0,37.0,12.0
-12,Машинное обучение,,40.0,38.0,
-13,The Science of Well-Being,4.9,36.0,34.0,
-14,Что такое наука о данных? ,,41.0,40.0,
-15,Что такое наука о данных? ,,41.0,40.0,
-16,Что такое наука о данных? ,,41.0,40.0,
-17,The AI Ladder: A Framework for Deploying AI in your Enterprise,,,,
-18,The AI Ladder: A Framework for Deploying AI in your Enterprise,,,,
-19,The AI Ladder: A Framework for Deploying AI in your Enterprise,,,,
-20,Indigenous Canada,4.8,19.0,,
+,TITLE,URL,RATING,NEW_CARRIER,TAKE_ADVANTAGES,EARN_MORE,LEVEL,LANGUAGE,EXEC_TIME,CHAPTERS_CNT,COURSE_DUR,CHAP_AVG_DUR
+0,Programming for Everybody (Getting Started with Python),https://ru.coursera.org/learn/python?specialization=python,4.8,39.0,39.0,12.0,,2,,7,1140,162.85714285714286
+1,Структуры данных в Python,https://ru.coursera.org/learn/python-data?specialization=python,4.9,31.0,32.0,12.0,,2,,7,1140,162.85714285714286
+2,Using Python to Access Web Data,https://ru.coursera.org/learn/python-network-data?specialization=python,,34.0,33.0,15.0,,2,,6,1140,190.0
+3,Using Databases with Python,https://ru.coursera.org/learn/python-databases?specialization=python,,34.0,34.0,13.0,,2,,5,900,180.0
+4,Что такое наука о данных? ,https://ru.coursera.org/learn/what-is-datascience,,41.0,40.0,,1.0,2,,3,480,160.0
+5,Tools for Data Science,https://ru.coursera.org/learn/open-source-tools-for-data-science,4.6,46.0,45.0,19.0,1.0,2,,4,960,240.0
+6,Data Science Methodology,https://ru.coursera.org/learn/data-science-methodology,4.6,34.0,37.0,11.0,1.0,2,,3,540,180.0
+7,Databases and SQL for Data Science,https://ru.coursera.org/learn/sql-data-science,4.7,38.0,33.0,,1.0,2,,4,840,210.0
+8,Нейронные сети и глубокое обучение,https://ru.coursera.org/learn/neural-networks-deep-learning?specialization=deep-learning,4.9,39.0,38.0,11.0,2.0,2,,4,1200,300.0
+9,"Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization",https://ru.coursera.org/learn/deep-neural-network?specialization=deep-learning,,41.0,37.0,12.0,1.0,2,,3,1080,360.0
+10,Structuring Machine Learning Projects,https://ru.coursera.org/learn/machine-learning-projects?specialization=deep-learning,4.8,36.0,38.0,14.0,1.0,2,,2,300,150.0
+11,Convolutional Neural Networks,https://ru.coursera.org/learn/convolutional-neural-networks?specialization=deep-learning,4.9,36.0,37.0,12.0,2.0,2,,4,1200,300.0
+12,Машинное обучение,https://ru.coursera.org/learn/machine-learning,,40.0,38.0,,,2,,11,1920,174.54545454545453
+13,Introduction to Cloud Computing,https://ru.coursera.org/learn/introduction-to-cloud,4.8,,,,1.0,2,,5,540,108.0
+14,Introduction to Artificial Intelligence (AI),https://ru.coursera.org/learn/introduction-to-ai,,,,,1.0,2,,4,480,120.0
+15,Что такое наука о данных? ,https://ru.coursera.org/learn/what-is-datascience,4.7,41.0,40.0,,1.0,2,,3,480,160.0
+16,The Science of Well-Being,https://ru.coursera.org/learn/the-science-of-well-being,4.9,36.0,34.0,,,2,,10,1080,108.0
+17,Introduction to Artificial Intelligence (AI),https://ru.coursera.org/learn/introduction-to-ai,4.7,,,,1.0,2,,4,480,120.0
+18,Что такое наука о данных? ,https://ru.coursera.org/learn/what-is-datascience,4.7,41.0,40.0,,1.0,2,,3,480,160.0
+19,The AI Ladder: A Framework for Deploying AI in your Enterprise,https://ru.coursera.org/learn/ibm-ai-ladder-framework,4.7,,,,1.0,2,,1,180,180.0
+20,Indigenous Canada,https://ru.coursera.org/learn/indigenous-canada,,19.0,,,,2,,12,1200,100.0
