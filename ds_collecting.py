@@ -152,7 +152,6 @@ def parse_course_page(url):
     chap_avg_dur = 0 # minutes
     for tag in tags:
         element = tag.find('div', {'data-test': 'duration-text-section'}).find('span').next_element
-        print(element)
         try:
             time = int((re.findall(r'[0-9]+', element))[0])
         except:
@@ -180,7 +179,8 @@ def main():
     sample = []
 
     # Gettig first page of course catalog
-    for i in range(1):
+    for i in range(10):
+        print('loop:'+str(i))
         # Gettig soup object of courses catalog page
         try:
             response = requests.get(COURSERA_URL + CATALOG_PAGE.format(i+1))
