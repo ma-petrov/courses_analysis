@@ -102,7 +102,8 @@ def parse_course_page(url):
     # Collecting course rating
     try:
         rating = 'empty-rating'
-        rating = soup.find('span', {'class': '_16ni8zai m-b-0 rating-text number-rating number-rating-expertise'}).next_element
+        rating = soup.find('span', class_=re.compile('number-rating')).next_element
+        #rating = soup.find('span', {'class': '_16ni8zai m-b-0 rating-text number-rating number-rating-expertise'}).next_element
         data.update({RATING: float(rating)})
     except:
         print('Error: cant convert value {} to float'.format(rating))
@@ -179,7 +180,7 @@ def main():
     sample = []
 
     # Gettig first page of course catalog
-    for i in range(10):
+    for i in range(50):
         print('loop:'+str(i))
         # Gettig soup object of courses catalog page
         try:
