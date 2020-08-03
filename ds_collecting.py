@@ -45,6 +45,7 @@ def parse_course_page(url):
     TITLE = 'TITLE'
     URL = 'URL'
     RATING = 'RATING'
+    TECHAER_RATING = 'TECHAER_RATING'
     NEW_CARRIER = 'NEW_CARRIER'
     TAKE_ADVANTAGES = 'TAKE_ADVANTAGES'
     EARN_MORE = 'EARN_MORE'
@@ -85,6 +86,7 @@ def parse_course_page(url):
         TITLE: '',
         URL: COURSERA_URL + url,
         RATING: None,
+        TECHAER_RATING: None,
         NEW_CARRIER: None,
         TAKE_ADVANTAGES: None,
         EARN_MORE: None,
@@ -103,10 +105,24 @@ def parse_course_page(url):
     try:
         rating = 'empty-rating'
         rating = soup.find('span', class_=re.compile('number-rating')).next_element
-        #rating = soup.find('span', {'class': '_16ni8zai m-b-0 rating-text number-rating number-rating-expertise'}).next_element
         data.update({RATING: float(rating)})
     except:
         print('Error: cant convert value {} to float'.format(rating))
+
+    # Collecting teacher rating
+    try:
+        rating_sum = 0
+        rating_cnt = 0
+        rating_value = 'empty'
+        for rating in soup.find_all('span', class_='avg-instructor-rating__total'):
+            rating_value = rating.find('span').next_element
+            num_list = re.findall(r'[0-9]+[.,][0-9]+', rating_value)
+            rating_sum += float(num_list[0])
+            rating_cnt += 1        
+        data.update({TECHAER_RATING: rating_sum/rating_cnt})
+    except:
+        print('Error: cant convert value {} to float'.format(rating_value))
+
 
     # Collecting NEW_CARRIER, TAKE_ADVANTAGES, EARN_MORE variables
     for tag in soup.find_all('div', {'class': '_1k3yl1y'}):
