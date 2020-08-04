@@ -45,7 +45,7 @@ def parse_course_page(url):
     TITLE = 'TITLE'
     URL = 'URL'
     RATING = 'RATING'
-    TECHAER_RATING = 'TECHAER_RATING'
+    TEACHER_RATING = 'TEACHER_RATING'
     NEW_CARRIER = 'NEW_CARRIER'
     TAKE_ADVANTAGES = 'TAKE_ADVANTAGES'
     EARN_MORE = 'EARN_MORE'
@@ -55,6 +55,7 @@ def parse_course_page(url):
     CHAPTERS_CNT = 'CHAPTERS_CNT'
     COURSE_DUR = 'COURSE_DUR'
     CHAP_AVG_DUR = 'CHAP_AVG_DUR'
+    EDU_NAME = 'EDU_NAME'
 
     work = {
         'начал новую карьеру, пройдя эти курсы': NEW_CARRIER,
@@ -86,7 +87,7 @@ def parse_course_page(url):
         TITLE: '',
         URL: COURSERA_URL + url,
         RATING: None,
-        TECHAER_RATING: None,
+        TEACHER_RATING: None,
         NEW_CARRIER: None,
         TAKE_ADVANTAGES: None,
         EARN_MORE: None,
@@ -95,7 +96,8 @@ def parse_course_page(url):
         EXEC_TIME: None,
         CHAPTERS_CNT: None,
         COURSE_DUR: None,
-        CHAP_AVG_DUR: None
+        CHAP_AVG_DUR: None,
+        EDU_NAME: None
     }
     
     # Collecting course title
@@ -119,7 +121,7 @@ def parse_course_page(url):
             num_list = re.findall(r'[0-9]+[.,][0-9]+', rating_value)
             rating_sum += float(num_list[0])
             rating_cnt += 1        
-        data.update({TECHAER_RATING: rating_sum/rating_cnt})
+        data.update({TEACHER_RATING: rating_sum/rating_cnt})
     except:
         print('Error: cant convert value {} to float'.format(rating_value))
 
@@ -183,6 +185,13 @@ def parse_course_page(url):
     if chapters_cnt > 0:
         chap_avg_dur = course_dur/chapters_cnt
 
+    # Coolecting university name
+    tag = soup.find('h4', class_='headline-4-text bold rc-Partner__title')
+    try:
+        data.update({EDU_NAME: tag.next_element})
+    except:
+        print('Error: cant find university name')
+
     data.update({COURSE_DUR: course_dur, CHAP_AVG_DUR: chap_avg_dur})
     
     return data
@@ -196,8 +205,8 @@ def main():
     sample = []
 
     # Gettig first page of course catalog
-    for i in range(50):
-        print('loop:'+str(i))
+    for i in range(45):
+        print('loop:'+str(i+1))
         # Gettig soup object of courses catalog page
         try:
             response = requests.get(COURSERA_URL + CATALOG_PAGE.format(i+1))
