@@ -42,18 +42,20 @@ def parse_course_page(url):
     url - url of course page
     """
     # dataset variables:
-    TITLE = 'TITLE'
-    URL = 'URL'
-    RATING = 'RATING'
-    NEW_CARRIER = 'NEW_CARRIER'
-    TAKE_ADVANTAGES = 'TAKE_ADVANTAGES'
-    EARN_MORE = 'EARN_MORE'
-    LEVEL = 'LEVEL'
-    LANGUAGE = 'LANGUAGE'
-    EXEC_TIME = 'EXEC_TIME'
-    CHAPTERS_CNT = 'CHAPTERS_CNT'
-    COURSE_DUR = 'COURSE_DUR'
-    CHAP_AVG_DUR = 'CHAP_AVG_DUR'
+    TITLE = 'title'
+    URL = 'url'
+    RATING = 'rate'
+    TEACHER_RATING = 'teach_rate'
+    NEW_CARRIER = 'new_car'
+    TAKE_ADVANTAGES = 'advent'
+    EARN_MORE = 'earn_more'
+    LEVEL = 'level'
+    LANGUAGE = 'lang'
+    EXEC_TIME = 'exec_time'
+    CHAPTERS_CNT = 'chap_cnt'
+    COURSE_DUR = 'course_dur'
+    CHAP_AVG_DUR = 'chap_avg_dur'
+    EDU_NAME = 'edu_name'
 
     work = {
         'начал новую карьеру, пройдя эти курсы': NEW_CARRIER,
@@ -85,6 +87,7 @@ def parse_course_page(url):
         TITLE: '',
         URL: COURSERA_URL + url,
         RATING: None,
+        TEACHER_RATING: None,
         NEW_CARRIER: None,
         TAKE_ADVANTAGES: None,
         EARN_MORE: None,
@@ -93,7 +96,8 @@ def parse_course_page(url):
         EXEC_TIME: None,
         CHAPTERS_CNT: None,
         COURSE_DUR: None,
-        CHAP_AVG_DUR: None
+        CHAP_AVG_DUR: None,
+        EDU_NAME: None
     }
     
     # Collecting course title
@@ -102,10 +106,25 @@ def parse_course_page(url):
     # Collecting course rating
     try:
         rating = 'empty-rating'
-        rating = soup.find('span', {'class': '_16ni8zai m-b-0 rating-text number-rating number-rating-expertise'}).next_element
+        rating = soup.find('span', class_=re.compile('number-rating')).next_element
         data.update({RATING: float(rating)})
     except:
         print('Error: cant convert value {} to float'.format(rating))
+
+    # Collecting teacher rating
+    try:
+        rating_sum = 0
+        rating_cnt = 0
+        rating_value = 'empty'
+        for rating in soup.find_all('span', class_='avg-instructor-rating__total'):
+            rating_value = rating.find('span').next_element
+            num_list = re.findall(r'[0-9]+[.,][0-9]+', rating_value)
+            rating_sum += float(num_list[0])
+            rating_cnt += 1        
+        data.update({TEACHER_RATING: rating_sum/rating_cnt})
+    except:
+        print('Error: cant convert value {} to float'.format(rating_value))
+
 
     # Collecting NEW_CARRIER, TAKE_ADVANTAGES, EARN_MORE variables
     for tag in soup.find_all('div', {'class': '_1k3yl1y'}):
@@ -166,6 +185,13 @@ def parse_course_page(url):
     if chapters_cnt > 0:
         chap_avg_dur = course_dur/chapters_cnt
 
+    # Coolecting university name
+    tag = soup.find('h4', class_='headline-4-text bold rc-Partner__title')
+    try:
+        data.update({EDU_NAME: tag.next_element})
+    except:
+        print('Error: cant find university name')
+
     data.update({COURSE_DUR: course_dur, CHAP_AVG_DUR: chap_avg_dur})
     
     return data
@@ -179,8 +205,8 @@ def main():
     sample = []
 
     # Gettig first page of course catalog
-    for i in range(10):
-        print('loop:'+str(i))
+    for i in range(45):
+        print('loop:'+str(i+1))
         # Gettig soup object of courses catalog page
         try:
             response = requests.get(COURSERA_URL + CATALOG_PAGE.format(i+1))
