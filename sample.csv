@@ -1,4 +1,4 @@
-,TITLE,URL,RATING,TEACHER_RATING,NEW_CARRIER,TAKE_ADVANTAGES,EARN_MORE,LEVEL,LANGUAGE,EXEC_TIME,CHAPTERS_CNT,COURSE_DUR,CHAP_AVG_DUR,EDU_NAME
+,title,url,rate,teach_rate,new_carr,advent,earn_more,level,lang,exec_time,chap_cnt,course_dur,chap_avg_dur,edu_name
 0,Programming for Everybody (Getting Started with Python),https://ru.coursera.org/learn/python?specialization=python,4.8,4.85,39.0,39.0,12.0,,2.0,,7,1140,162.85714285714286,Мичиганский университет
 1,Структуры данных в Python,https://ru.coursera.org/learn/python-data?specialization=python,4.9,4.87,31.0,32.0,12.0,,2.0,,7,1140,162.85714285714286,Мичиганский университет
 2,Using Python to Access Web Data,https://ru.coursera.org/learn/python-network-data?specialization=python,4.8,4.85,34.0,33.0,15.0,,2.0,,6,1140,190.0,Мичиганский университет

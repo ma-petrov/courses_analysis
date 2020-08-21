@@ -42,20 +42,20 @@ def parse_course_page(url):
     url - url of course page
     """
     # dataset variables:
-    TITLE = 'TITLE'
-    URL = 'URL'
-    RATING = 'RATING'
-    TEACHER_RATING = 'TEACHER_RATING'
-    NEW_CARRIER = 'NEW_CARRIER'
-    TAKE_ADVANTAGES = 'TAKE_ADVANTAGES'
-    EARN_MORE = 'EARN_MORE'
-    LEVEL = 'LEVEL'
-    LANGUAGE = 'LANGUAGE'
-    EXEC_TIME = 'EXEC_TIME'
-    CHAPTERS_CNT = 'CHAPTERS_CNT'
-    COURSE_DUR = 'COURSE_DUR'
-    CHAP_AVG_DUR = 'CHAP_AVG_DUR'
-    EDU_NAME = 'EDU_NAME'
+    TITLE = 'title'
+    URL = 'url'
+    RATING = 'rate'
+    TEACHER_RATING = 'teach_rate'
+    NEW_CARRIER = 'new_car'
+    TAKE_ADVANTAGES = 'advent'
+    EARN_MORE = 'earn_more'
+    LEVEL = 'level'
+    LANGUAGE = 'lang'
+    EXEC_TIME = 'exec_time'
+    CHAPTERS_CNT = 'chap_cnt'
+    COURSE_DUR = 'course_dur'
+    CHAP_AVG_DUR = 'chap_avg_dur'
+    EDU_NAME = 'edu_name'
 
     work = {
         'начал новую карьеру, пройдя эти курсы': NEW_CARRIER,
